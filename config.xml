@@ -11,8 +11,6 @@
 </platform>
 <preference name="phonegap-version" value="cli-6.2.0" />
 <preference name="xwalkMultipleApk" value="false" />
-<plugin name="cordova-plugin-device" spec="1.1.2"/>
-<plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1"/>
 <platform name="android" >
     <preference name="android-minSdkVersion" value="16"/>
     <preference name="android-targetSdkVersion" value="19"/>
