@@ -13,8 +13,16 @@
 <preference name="xwalkMultipleApk" value="false" />
 <plugin name="cordova-plugin-device" spec="1.1.2"/>
 <plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1"/>
-<icon platform="android" src="icon/icon36.png" density="ldpi" width="36" height="36"/>
-<icon platform="android" src="icon/icon48.png" density="mdpi" width="48" height="48"/>
-<icon platform="android" src="icon/icon72.png" density="hdpi" width="72" height="72"/>
-<icon platform="android" src="icon/icon96.png" density="xhdpi" width="96" height="96"/>
+<platform name="android" >
+    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="android-targetSdkVersion" value="19"/>
+    <preference name="android-installLocation" value="auto"/>
+    <preference name="Orientation" value="landscape"/>
+    <preference name="Fullscreen" value="false"/>
+    <preference name="AndroidLaunchMode" value="singleTop"/>
+</platform>
+<icon platform="android" src="icon/logo36.png" density="ldpi" width="36" height="36"/>
+<icon platform="android" src="icon/logo48.png" density="mdpi" width="48" height="48"/>
+<icon platform="android" src="icon/logo72.png" density="hdpi" width="72" height="72"/>
+<icon platform="android" src="icon/logo96.png" density="xhdpi" width="96" height="96"/>
 </widget>
