@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="jquery.min.js"></script>
 <link rel="stylesheet" href="loading.css" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="bootstrap.min.css">
-<script src="jquery.min.js"></script>
-<script src="bootstrap.min.js"></script>
+<script src="jquery.min.js" charset="utf-8"></script>
+<script src="bootstrap.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
 <script>
@@ -16,29 +16,32 @@
     {
         window.location.href = "login.html";
     }
-</script>
+</script> 
     
 </head>
 <body style="background:#F2F2F2">
-<div class="col-md-12 text-right">
-	<br><a href="login.html" class="btn btn-warning btn-sm">ออกจากระบบ</a>
-</div>
-<div class="col-md-12 ">
-	<center><h3>iStaff<small> Rajyindee Hospital</small></h3></center>
-</div><br>
 <div class="col-md-12">
-	<center><img style="max-width:80%; max-height:80%;" src="logo.png"></img></center>
-</div><br>
-<div class="col-md-12">
-	<a href="activity.html" class="btn btn-default btn-lg btn-block"><i class="fa fa-clock-o" aria-hidden="true"></i> สรุปชั่วโมงอบรม</a>
+<div id="ddItems">
+	<div class="spinner">
+		<div class="rect1"></div>
+		<div class="rect2"></div>
+		<div class="rect3"></div>
+		<div class="rect4"></div>
+		<div class="rect5"></div>
+	</div>
+	<h4><center>กรุณารอสักครู่</center></h4>
 </div>
-<div class="col-md-12">
-	<a href="dayoff.html" class="btn btn-default btn-lg btn-block"><i class="fa fa-calendar" aria-hidden="true"></i> สรุปการลางาน</a>
-</div>
-<!--div class="col-md-12">
-	<a href="https://opentokrtc.com/rajyindee" class="btn btn-default btn-lg btn-block"><i class="fa fa-users" aria-hidden="true"></i> ประชุม</a>
-</div-->
-<center><h5><small>Created by Piyawat Maneenual. Rajyindee Hospital 2016</small></h5></center>
+
+<script type="text/javascript" charset="UTF-8">
+$.ajax({
+  type: 'GET',
+  url: 'http://49.231.150.237/hr/dayoff.php?id='+cookeieuser,
+  success: function (data) {
+     document.getElementById("ddItems").innerHTML = data; 
+  }
+});
+</script>
+
 </div>
 </body>
 </html>
