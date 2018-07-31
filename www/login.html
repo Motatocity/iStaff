@@ -75,8 +75,6 @@
 			success: function(data){
 				//console.log(data);
 				//alert(data);
-				window.location.href = "login_fail.html";
-				/*
 				if(data['check_login'] == "YES")
 				{
 					setCookie("user",data['user'],365);
@@ -91,9 +89,9 @@
 				}else{
 					window.location.href = "login_fail.html";
 				}
-				*/
 			},
 			error: function(jqXHR, textStatus, errorThrown){
+				window.location.href = "login_fail.html";
 				//alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
 				//console.log(data);
 				//alert('There was an error adding your comment');
