@@ -68,7 +68,7 @@
 		$.ajax({
 			type: 'GET',
 			data: postData,
-			url: "http://49.231.150.237/hr/login.php?&jsoncallback=?",
+			url: "http://49.231.150.237/hr/login.php?&callback=?",
 			crossDomain: true,
 			async: false,
 			dataType: 'jsonp',
@@ -90,7 +90,7 @@
 					window.location.href = "login_fail.html";
 				}
 			},
-			error: function(jqXHR, textStatus, errorThrown){
+			error: function(data){
 				window.location.href = "login_fail.html";
 				//alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
 				//console.log(data);
