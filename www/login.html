@@ -74,7 +74,7 @@
 			dataType: 'jsonp',
 			success: function(data){
 				console.log(data);
-				alert(data['check_login'] == "YES");
+				alert(data);
 				if(data['check_login'] == "YES")
 				{
 					setCookie("user",data['user'],365);
