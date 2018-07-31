@@ -46,10 +46,10 @@
 </div>
 <form>
 	<div class="col-md-12">
-		<input type="text" class="form-control" id="txtUsername" name="txtUsername" placeholder="Username">
+		<input type="text" class="form-control" id="user" name="user" placeholder="Username">
 	</div>
 	<div class="col-md-12">
-		<input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Password">
+		<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
 	</div><br>
 	<div class="col-md-12 text-center">
 		<button type="submit" class="btn btn-danger btn-lg"><i class="fa fa-users" aria-hidden="true"></i> Login</button>
@@ -62,29 +62,40 @@
 	// Submit Data
 	$('form').submit(function(){
 	var postData = $(this).serialize();
-	var user = document.getElementById("txtUsername").value;
+	var user = document.getElementById("user").value;
+	var pwd = document.getElementById("pwd").value;
         
-	$.ajax({
-		type: 'POST',
-		data: postData,
-		url: "http://49.231.150.237/hr/login.php",
-        dataType: 'html',
-		success: function(data){
-			if(data == "Success!")
-			{
-				setCookie("user",user,365);
-                window.localStorage.setItem("user", user);
-				window.location.href = "index.html";
-			}else{
-				window.location.href = "login_fail.html";
+		$.ajax({
+			type: 'GET',
+			data: postData,
+			url: "http://49.231.150.237/hr/login.php",
+			crossDomain: true,
+			async: false,
+			dataType: 'jsonp',
+			success: function(data){
+				console.log(data);
+				if(data['check_login'] == "YES")
+				{
+					setCookie("user",data['user'],365);
+					window.localStorage.setItem("user", user);
+					setCookie("display",data['display'],365);
+					window.localStorage.setItem("display", data['display']);
+					setCookie("department",data['department'],365);
+					window.localStorage.setItem("department", data['department']);
+					setCookie("empid",data['empid'],365);
+					window.localStorage.setItem("empid", data['empid']);
+					window.location.href = "index.html";
+				}else{
+					window.location.href = "login_fail.html";
+				}
+			},
+			error: function(jqXHR, textStatus, errorThrown){
+				alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
+				console.log(data);
+				//alert('There was an error adding your comment');
 			}
-		},
-		error: function(data){
-			console.log(data);
-			//alert('There was an error adding your comment');
-		}
-	});
-        return false;
+		});
+		return false;
 	});
 	
 	function getCookie(cname) {
