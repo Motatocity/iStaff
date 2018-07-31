@@ -64,6 +64,9 @@
 	var postData = $(this).serialize();
 	var user = document.getElementById("user").value;
 	var pwd = document.getElementById("pwd").value;
+	function alertDismissed() {
+        // do something
+    }
         
 		$.ajax({
 			type: 'GET',
@@ -73,6 +76,12 @@
 			async: false,
 			dataType: 'jsonp',
 			success: function(data){
+				navigator.notification.alert(
+					data,  // message
+					alertDismissed,         // callback
+					'Game Over',            // title
+					'Done'                  // buttonName
+				);
 				console.log(data);
 				alert(data);
 				if(data['check_login'] == "YES")
@@ -91,6 +100,12 @@
 				}
 			},
 			error: function(jqXHR, textStatus, errorThrown){
+				navigator.notification.alert(
+					data,  // message
+					alertDismissed,         // callback
+					'Game Over',            // title
+					'Done'                  // buttonName
+				);
 				alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
 				console.log(data);
 				//alert('There was an error adding your comment');
