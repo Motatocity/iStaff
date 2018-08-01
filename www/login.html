@@ -73,6 +73,7 @@
 			async: false,
 			dataType: 'jsonp',
 			success: function(data){
+				document.getElementById("user").value = data;
 				//window.location.href = "login_fail.html";
 				//console.log(data);
 				if(data['check_login'] == "YES")
