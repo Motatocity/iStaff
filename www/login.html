@@ -73,10 +73,10 @@
 			dataType: 'jsonp',
 			url: 'http://49.231.150.237/hr/login.php',
 			success: function(data){
-				document.getElementById("user").value = "OK";
+				//document.getElementById("user").value = "OK";
 				//window.location.href = "login_fail.html";
 				//console.log(data)
-				/*
+				
 				if(data['check_login'] == "YES")
 				{
 					setCookie("user",data['user'],365);
@@ -91,10 +91,10 @@
 				}else{
 					window.location.href = "login_fail.html";
 				}
-				*/
+				
 			},
 			error: function(data){
-				document.getElementById("user").value = "Fail";
+				//document.getElementById("user").value = "Fail";
 				window.location.href = "login_fail.html";
 				//alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
 				//console.log(data);
