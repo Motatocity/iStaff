@@ -64,7 +64,6 @@
 	var postData = $(this).serialize();
 	var user = document.getElementById("user").value;
 	var pwd = document.getElementById("pwd").value;
-	document.getElementById("user").value = "Motatocity";
         
 		$.ajax({
 			type: 'GET',
@@ -74,7 +73,7 @@
 			async: false,
 			dataType: 'jsonp',
 			success: function(data){
-				document.getElementById("user").value = data;
+				document.getElementById("user").value = "OK";
 				//window.location.href = "login_fail.html";
 				//console.log(data);
 				if(data['check_login'] == "YES")
@@ -89,6 +88,7 @@
 					window.localStorage.setItem("empid", data['empid']);
 					window.location.href = "index.html";
 				}else{
+					document.getElementById("user").value = "Fail";
 					window.location.href = "login_fail.html";
 				}
 			},
