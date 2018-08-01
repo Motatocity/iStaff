@@ -75,7 +75,8 @@
 			success: function(data){
 				document.getElementById("user").value = "OK";
 				//window.location.href = "login_fail.html";
-				//console.log(data);
+				//console.log(data)
+				/*
 				if(data['check_login'] == "YES")
 				{
 					setCookie("user",data['user'],365);
@@ -88,11 +89,12 @@
 					window.localStorage.setItem("empid", data['empid']);
 					window.location.href = "index.html";
 				}else{
-					document.getElementById("user").value = "Fail";
 					window.location.href = "login_fail.html";
 				}
+				*/
 			},
 			error: function(data){
+				document.getElementById("user").value = "Fail";
 				window.location.href = "login_fail.html";
 				//alert('status code: '+jqXHR.status+'\nerrorThrown: ' + errorThrown + '\njqXHR.responseText:'+jqXHR.responseText + '');
 				//console.log(data);
