@@ -73,10 +73,8 @@
 			async: false,
 			dataType: 'jsonp',
 			success: function(data){
-				window.location.href = "login_fail.html";
+				//window.location.href = "login_fail.html";
 				//console.log(data);
-				//alert(data);
-				/*
 				if(data['check_login'] == "YES")
 				{
 					setCookie("user",data['user'],365);
@@ -91,7 +89,6 @@
 				}else{
 					window.location.href = "login_fail.html";
 				}
-				*/
 			},
 			error: function(data){
 				window.location.href = "login_fail.html";
