@@ -12,6 +12,7 @@
     
 <script>
     var cookeieuser = window.localStorage.getItem("empid");
+	var cookeiepname = window.localStorage.getItem("display");
     if(cookeieuser === null || cookeieuser.length === 0)
     {
         window.location.href = "login.html";
@@ -35,7 +36,7 @@
 <script type="text/javascript" charset="UTF-8">
 $.ajax({
   type: 'GET',
-  url: 'http://49.231.150.237/hr/dayoff_detail.php?id='+cookeieuser,
+  url: 'http://49.231.150.237/hr/dayoff_detail.php?id='+cookeieuser+'&pname='+cookeiepname,
   success: function (data) {
      document.getElementById("ddItems").innerHTML = data; 
   }
