@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
 <script>
-    var cookeieuser = window.localStorage.getItem("user");
+    var cookeieuser = window.localStorage.getItem("empid");
+	var cookeiepname = window.localStorage.getItem("display");
     if(cookeieuser === null || cookeieuser.length === 0)
     {
         window.location.href = "login.html";
@@ -35,7 +36,7 @@
 <script type="text/javascript" charset="UTF-8">
 $.ajax({
   type: 'GET',
-  url: 'http://49.231.150.237/hr/activity.php?id='+cookeieuser,
+  url: 'http://49.231.150.237/hr/activity.php?id='+cookeieuser+'&pname='+cookeiepname,
   success: function (data) {
      document.getElementById("ddItems").innerHTML = data; 
   }
