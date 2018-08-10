@@ -73,6 +73,7 @@ $.ajax({
   type: 'GET',
   url: 'http://49.231.150.237/hr/worktime.php?id='+cookeieuser+'&pname='+cookeiepname,
   success: function (data) {
+	document.getElementById("ddItems").innerHTML = ""; 
 	$(function () {
 
     /* initialize the external events
@@ -108,7 +109,7 @@ $.ajax({
     var d = date.getDate(),
         m = date.getMonth(),
         y = date.getFullYear();
-		datadate = data
+		datadate = data;
     $('#calendar').fullCalendar({
       header: {
         left: 'prev,next today',
