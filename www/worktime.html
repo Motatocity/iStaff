@@ -72,7 +72,7 @@ document.write('<link rel="stylesheet" href="http://49.231.150.237/hr/dist/css/A
 $.ajax({
   type: 'GET',
   url: 'http://49.231.150.237/hr/worktime.php?id='+cookeieuser+'&pname='+cookeiepname,
-  success: function (data) {
+  success: function (datac) {
 	document.getElementById("ddItems").innerHTML = ""; 
 	$(function () {
 
@@ -109,9 +109,8 @@ $.ajax({
     var d = date.getDate(),
         m = date.getMonth(),
         y = date.getFullYear();
-	
-	var stringArray = (new Function("return [" + data+ "];")());
-	var datadate = (new Function("return [" + objectstring+ "];")());
+
+	var datadate = (new Function("return [" + datac + "];")());
 	
     $('#calendar').fullCalendar({
       header: {
