@@ -56,30 +56,23 @@
 <script src="http://49.231.150.237/hr/plugins/fullcalendar/fullcalendar.min.js"></script>
 <!-- Page specific script -->
 
-
-
-<!-- /.col -->
-	<div class="col-md-12">
-        <div class="box box-primary">
-            <div class="box-body no-padding">
-              <!-- THE CALENDAR -->
-              <div id="calendar"></div>
-            </div>
-            <!-- /.box-body -->
-        </div>
-        <!-- /. box -->
-    </div>
-    <!-- /.col -->
-	
-</div>
-
 <script type="text/javascript" charset="UTF-8">
+/*
+$.ajax({
+  type: 'GET',
+  url: 'http://49.231.150.237/hr/info.php?id='+cookeieuser+'&pname='+cookeiepname,
+  success: function (data) {
+     document.getElementById("ddItems").innerHTML = data; 
+  }
+});
+*/
+
+document.write('<link rel="stylesheet" href="http://49.231.150.237/hr/dist/css/AdminLTE.min.css"><div class="container"><div class="row"><div class="col-xs-2"><h3 style="margin-bottom: 0px;"><a href="index.html" class="btn btn-default btn-lg"><i class="fa fa-angle-left" aria-hidden="true"></i></a></h3></div><div class="col-xs-10"><h3 style="margin-bottom: 0px;">สรุปจำนวนการลางาน</h3><p style="margin-top: 0px;">'+cookeieuser+' (รหัสพนักงาน '+cookeiepname+')</p></div></div></div>');
+
 $.ajax({
   type: 'GET',
   url: 'http://49.231.150.237/hr/worktime.php?id='+cookeieuser+'&pname='+cookeiepname,
   success: function (data) {
-     document.getElementById("ddItems").innerHTML = data; 
-	 
 	$(function () {
 
     /* initialize the external events
@@ -115,51 +108,7 @@ $.ajax({
     var d = date.getDate(),
         m = date.getMonth(),
         y = date.getFullYear();
-		datadate = [
-        {
-          title: 'Motatocity All Day Event',
-          start: new Date(y, m, 1),
-          backgroundColor: "#f56954", //red
-          borderColor: "#f56954" //red
-        },
-        {
-          title: 'Motatocity Long Event',
-          start: new Date(y, m, d - 5),
-          end: new Date(y, m, d - 2),
-          backgroundColor: "#f39c12", //yellow
-          borderColor: "#f39c12" //yellow
-        },
-        {
-          title: 'Motatocity Meeting',
-          start: new Date(y, m, d, 10, 30),
-          allDay: false,
-          backgroundColor: "#0073b7", //Blue
-          borderColor: "#0073b7" //Blue
-        },
-        {
-          title: 'Motatocity Lunch',
-          start: new Date(y, m, d, 12, 0),
-          end: new Date(y, m, d, 14, 0),
-          allDay: false,
-          backgroundColor: "#00c0ef", //Info (aqua)
-          borderColor: "#00c0ef" //Info (aqua)
-        },
-        {
-          title: 'Motatocity Birthday Party',
-          start: new Date(y, m, d + 1, 19, 0),
-          end: new Date(y, m, d + 1, 22, 30),
-          allDay: false,
-          backgroundColor: "#00a65a", //Success (green)
-          borderColor: "#00a65a" //Success (green)
-        },
-        {
-          title: 'Motatocity Click for Google',
-          start: new Date(y, m, 28),
-          end: new Date(y, m, 29),
-          url: 'http://google.com/',
-          backgroundColor: "#3c8dbc", //Primary (light-blue)
-          borderColor: "#3c8dbc" //Primary (light-blue)
-        }]
+		datadate = data
     $('#calendar').fullCalendar({
       header: {
         left: 'prev,next today',
@@ -238,6 +187,22 @@ $.ajax({
   }
 });
 </script>
+
+<!-- /.col -->
+	<div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-body no-padding">
+              <!-- THE CALENDAR -->
+              <div id="calendar"></div>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /. box -->
+    </div>
+    <!-- /.col -->
+	
+</div>
+</div>
 	
 </div>
 </body>
