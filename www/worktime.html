@@ -108,8 +108,11 @@ $.ajax({
     var date = new Date();
     var d = date.getDate(),
         m = date.getMonth(),
-        y = date.getFullYear(),
-		datadate = JSON.parse("[" + data + "]");
+        y = date.getFullYear();
+	
+	var stringArray = (new Function("return [" + data+ "];")());
+	var datadate = (new Function("return [" + objectstring+ "];")());
+	
     $('#calendar').fullCalendar({
       header: {
         left: 'prev,next today',
