@@ -42,25 +42,25 @@
       <div class="box-footer">
         <div class="row">
           <div class="col-xs-4 border-right">
-            <div class="description-block">
-			<h5 id="empid" class="description-header">-</h5>
-			<span class="description-text">รหัสพนักงาน</span>
+            <div class="description-block" style="margin-bottom: 0px;">
+				<span id="empid" class="description-header">-</span><br>
+				<span class="description-text">รหัสพนักงาน</span>
             </div>
             <!-- /.description-block -->
           </div>
           <!-- /.col -->
           <div class="col-xs-4 border-right">
-            <div class="description-block">
-			<h5 id="emppos" class="description-header">-</h5>
-			<span class="description-text">ตำแหน่ง</span>
+            <div class="description-block" style="margin-bottom: 0px;">
+				<span id="emppos" class="description-header">-</span><br>
+				<span class="description-text">ตำแหน่ง</span>
             </div>
             <!-- /.description-block -->
           </div>
           <!-- /.col -->
           <div class="col-xs-4">
-            <div class="description-block">
-			<h5 id="emphn" class="description-header">-</h5>
-			<span class="description-text">หมายเลข HN</span>
+            <div class="description-block" style="margin-bottom: 0px;">
+				<span id="emphn" class="description-header">-</span><br>
+				<span class="description-text">หมายเลข HN</span>
             </div>
             <!-- /.description-block -->
           </div>
@@ -79,8 +79,10 @@
         <h3 class="box-title"><i class="fa fa-bullhorn"></i> แจ้งเตือน</h3>
       </div>
 		<div class="callout callout-success">
+		<small>
 			ยินดีต้อนรับสู่ระบบ iStaff พัฒนาโดยหน่วย IT
 			<br>ตอนนี้ใช้งานได้เฉพาะ Android กำลังพัฒนาบน iOS เร็วๆ นี้
+		</small>
 		</div>
 	</div>
 </div>
@@ -88,9 +90,7 @@
 <div class="col-md-12">
     <!-- Application buttons -->
     <div class="box">
-      <div class="box-header">
-        <!--h3 class="box-title"></h3-->
-      </div>
+
       <div class="box-body">
         <!--p></p-->
         <a class="btn btn-app" href="activity.html">
@@ -148,7 +148,7 @@
 	document.getElementById("nameprofile").innerHTML = cookeiedisplay;
 	document.getElementById("desprofile").innerHTML = cookeiedepartment;
 	document.getElementById("empid").innerHTML = cookeieempid;
-	document.getElementById("emppos").innerHTML = cookeieposition;
+	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
 </script>
 
