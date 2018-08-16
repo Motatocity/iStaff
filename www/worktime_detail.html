@@ -35,7 +35,7 @@
 
 <script type="text/javascript" charset="UTF-8">
 var d = new Date();
-var msel = d.getMonth();
+var msel = d.getMonth()+1;
 $.ajax({
   type: 'GET',
   url: 'http://49.231.150.237/hr/worktime_detail.php?id='+cookeieuser+'&pname='+cookeiepname+'&monthsel='+('0' + msel).slice(-2),
