@@ -85,6 +85,12 @@
 					window.localStorage.setItem("department", data['department']);
 					setCookie("empid",data['empid'],365);
 					window.localStorage.setItem("empid", data['empid']);
+					setCookie("type",data['type'],365);
+					window.localStorage.setItem("type", data['type']);
+					setCookie("position",data['position'],365);
+					window.localStorage.setItem("position", data['position']);
+					setCookie("hn",data['hn'],365);
+					window.localStorage.setItem("hn", data['hn']);
 					window.location.href = "index.html";
 				}else{
 					window.location.href = "login_fail.html";

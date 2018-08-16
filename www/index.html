@@ -25,78 +25,134 @@
 	<br><a href="login.html" class="btn btn-warning btn-sm">ออกจากระบบ</a>
 </div>
 <div class="col-md-12 ">
-	<center><h3>iStaff<small> Rajyindee Hospital</small></h3></center>
-</div><br>
-
-<div class="col-md-12">
-	<center><img style="max-width:80%; max-height:80%;" src="logo.png"></img></center>
-</div><br>
-<!--div class="col-md-12">
-	<a href="activity.html" class="btn btn-default btn-lg btn-block"><i class="fa fa-graduation-cap" aria-hidden="true"></i> สรุปชั่วโมงอบรม</a>
-</div>
-<div class="col-md-12">
-	<a href="dayoff.html" class="btn btn-default btn-lg btn-block"><i class="fa fa-plane" aria-hidden="true"></i> สรุปการลางาน</a>
-</div>
-<div class="col-md-12">
-	<a href="worktime.html" class="btn btn-default btn-lg btn-block"><i class="fa fa-calendar" aria-hidden="true"></i> ตารางเวร</a>
-</div-->
-<div class="col-md-12">
-	<a href="https://opentokrtc.com/room/rajyindee?userName=570041" class="btn btn-default btn-lg btn-block"><i class="fa fa-users" aria-hidden="true"></i> ประชุม</a>
+	<center><h3 style="margin-top: 10px;"><img style="max-width:10%; max-height:10%;" src="logo.png"></img> iStaff<small> Rajyindee Hospital</small></h3></center>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-12">
+    <!-- Widget: user widget style 1 -->
+    <div class="box box-widget widget-user">
+      <!-- Add the bg color to the header using any of the bg-* classes -->
+      <div class="widget-user-header bg-aqua-active">
+        <h3 id="nameprofile" class="widget-user-username"></h3>
+        <h5 id="desprofile" class="widget-user-desc"></h5>
+      </div>
+      <div class="widget-user-image">
+        <img class="img-circle" id="imgprofile" src="" alt="User Avatar">
+      </div>
+      <div class="box-footer">
+        <div class="row">
+          <div class="col-xs-4 border-right">
+            <div class="description-block">
+			<h5 id="empid" class="description-header">-</h5>
+			<span class="description-text">รหัสพนักงาน</span>
+            </div>
+            <!-- /.description-block -->
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4 border-right">
+            <div class="description-block">
+			<h5 id="emppos" class="description-header">-</h5>
+			<span class="description-text">ตำแหน่ง</span>
+            </div>
+            <!-- /.description-block -->
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4">
+            <div class="description-block">
+			<h5 id="emphn" class="description-header">-</h5>
+			<span class="description-text">หมายเลข HN</span>
+            </div>
+            <!-- /.description-block -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+    <!-- /.widget-user -->
+</div>
+
+<div class="col-md-12">
     <!-- Application buttons -->
     <div class="box">
       <div class="box-header">
-        <h3 class="box-title">Application Buttons</h3>
+        <h3 class="box-title"><i class="fa fa-bullhorn"></i> แจ้งเตือน</h3>
+      </div>
+		<div class="callout callout-success">
+			ยินดีต้อนรับสู่ระบบ iStaff พัฒนาโดยหน่วย IT
+			<br>ตอนนี้ใช้งานได้เฉพาะ Android กำลังพัฒนาบน iOS เร็วๆ นี้
+		</div>
+	</div>
+</div>
+
+<div class="col-md-12">
+    <!-- Application buttons -->
+    <div class="box">
+      <div class="box-header">
+        <!--h3 class="box-title"></h3-->
       </div>
       <div class="box-body">
         <!--p></p-->
         <a class="btn btn-app" href="activity.html">
-          <i class="fa fa-edit"></i> ชั่วโมงอบรม
+			<i class="fa fa-edit"></i> ชั่วโมงอบรม
         </a>
         <a class="btn btn-app" href="dayoff.html">
-          <i class="fa fa-plane"></i> สรุปการลา
+			<i class="fa fa-plane"></i> สรุปการลา
         </a>
         <a class="btn btn-app" href="worktime.html">
-          <i class="fa fa-calendar"></i> ตารางเวร
+			<i class="fa fa-calendar"></i> ตารางเวร
         </a>
         <!--a class="btn btn-app">
-          <i class="fa fa-pause"></i> Pause
+    <i class="fa fa-pause"></i> Pause
         </a>
         <a class="btn btn-app">
-          <i class="fa fa-save"></i> Save
+    <i class="fa fa-save"></i> Save
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-yellow">3</span>
-          <i class="fa fa-bullhorn"></i> Notifications
+    <span class="badge bg-yellow">3</span>
+    <i class="fa fa-bullhorn"></i> Notifications
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-green">300</span>
-          <i class="fa fa-barcode"></i> Products
+    <span class="badge bg-green">300</span>
+    <i class="fa fa-barcode"></i> Products
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-purple">891</span>
-          <i class="fa fa-users"></i> Users
+    <span class="badge bg-purple">891</span>
+    <i class="fa fa-users"></i> Users
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-teal">67</span>
-          <i class="fa fa-inbox"></i> Orders
+    <span class="badge bg-teal">67</span>
+    <i class="fa fa-inbox"></i> Orders
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-aqua">12</span>
-          <i class="fa fa-envelope"></i> Inbox
+    <span class="badge bg-aqua">12</span>
+    <i class="fa fa-envelope"></i> Inbox
         </a>
         <a class="btn btn-app">
-          <span class="badge bg-red">531</span>
-          <i class="fa fa-heart-o"></i> Likes
+    <span class="badge bg-red">531</span>
+    <i class="fa fa-heart-o"></i> Likes
         </a-->
       </div>
 	</div>
 </div>
 <!-- /.box-body -->
 
-<center><h5><small>Created by Piyawat Maneenual. Rajyindee Hospital 2016</small></h5></center>
+<script>
+    var cookeieuser = window.localStorage.getItem("user");
+	var cookeiedisplay = window.localStorage.getItem("display");
+	var cookeiedepartment = window.localStorage.getItem("department");
+	var cookeieempid = window.localStorage.getItem("empid");
+	var cookeiehn = window.localStorage.getItem("hn");
+	var cookeieposition = window.localStorage.getItem("position");
+	document.getElementById("imgprofile").src = "http://49.231.150.237/kaizen/exec/img.php?usr="+cookeieuser;
+	document.getElementById("nameprofile").innerHTML = cookeiedisplay;
+	document.getElementById("desprofile").innerHTML = cookeiedepartment;
+	document.getElementById("empid").innerHTML = cookeieempid;
+	document.getElementById("emppos").innerHTML = cookeieposition;
+	document.getElementById("emphn").innerHTML = cookeiehn;
+</script>
+
+<center><h5><small>Created by Piyawat Maneenual. Rajyindee Hospital 2018<br>หน่วยเทคโนโลยีสารสนเทศ โรงพยาบาลราษฎร์ยินดี</small></h5></center>
 </div>
 </body>
 </html>
