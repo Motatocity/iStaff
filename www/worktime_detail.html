@@ -34,9 +34,11 @@
 </div>
 
 <script type="text/javascript" charset="UTF-8">
+var d = new Date();
+var msel = d.getMonth();
 $.ajax({
   type: 'GET',
-  url: 'http://49.231.150.237/hr/worktime_detail.php?id='+cookeieuser+'&pname='+cookeiepname+'&type=OT',
+  url: 'http://49.231.150.237/hr/worktime_detail.php?id='+cookeieuser+'&pname='+cookeiepname+'&monthsel='+('0' + msel).slice(-2),
   success: function (data) {
      document.getElementById("ddItems").innerHTML = data; 
   }
