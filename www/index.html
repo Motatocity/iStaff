@@ -153,6 +153,20 @@
 	document.getElementById("empid").innerHTML = cookeieempid;
 	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
+
+	function onDeviceReady() {
+		document.removeEventListener('deviceready', onDeviceReady, false);
+
+		// Set AdMobAds options:
+		admob.setOptions({
+			publisherId:          "ca-app-pub-5602400827221740~3466270168",  // Required
+			interstitialAdId:     "ca-app-pub-5602400827221740/5309727076",  // Optional
+			tappxIdAndroid:       "",        								// Optional
+			tappxShare:           0.5                                        // Optional
+		});
+	}
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
 </script>
 
 <center><h5><small>Created by Piyawat Maneenual. Rajyindee Hospital 2018<br>หน่วยเทคโนโลยีสารสนเทศ โรงพยาบาลราษฎร์ยินดี</small></h5></center>
