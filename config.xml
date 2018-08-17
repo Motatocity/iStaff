@@ -11,8 +11,6 @@
 </platform>
 <preference name="phonegap-version" value="cli-6.2.0" />
 <preference name="xwalkMultipleApk" value="false" />
-<plugin name="onesignal-cordova-plugin" spec="2.0.6" />
-
 <plugin name="cordova-plugin-device" spec="1.1.2"/>
 <plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1"/>
 <icon platform="android" src="icon/logo36.png" density="ldpi" width="36" height="36"/>

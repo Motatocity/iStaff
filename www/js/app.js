@@ -37,7 +37,7 @@ function myEventHandler() {
 
 
 // ...additional event handlers here... 
-
+/*
 document.addEventListener('deviceready', function () {
   // Enable to debug issues.
   // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
@@ -45,12 +45,12 @@ document.addEventListener('deviceready', function () {
   var notificationOpenedCallback = function(jsonData) {
     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
   };
-/*
+
   window.plugins.OneSignal
     .startInit("14b162b3-4125-4f89-af4e-741d0ff9e0f9")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
-*/
+
 	window.plugins.OneSignal.init("14b162b3-4125-4f89-af4e-741d0ff9e0f9",
                                  {googleProjectNumber: "294430135080"},
                                  notificationOpenedCallback);
@@ -59,4 +59,6 @@ document.addEventListener('deviceready', function () {
 	window.plugins.OneSignal.enableInAppAlertNotification(true);
   
 }, false);
+*/
+
 
