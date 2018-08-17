@@ -37,17 +37,3 @@ function myEventHandler() {
 
 
 // ...additional event handlers here...
-
-document.addEventListener('deviceready', function () {
-  // Enable to debug issues.
-  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  
-  var notificationOpenedCallback = function(jsonData) {
-    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-  };
-
-  window.plugins.OneSignal
-    .startInit("14b162b3-4125-4f89-af4e-741d0ff9e0f9")
-    .handleNotificationOpened(notificationOpenedCallback)
-    .endInit();
-}, false);
