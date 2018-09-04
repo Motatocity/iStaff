@@ -16,6 +16,5 @@
 <gap:plugin name="phonegap-admob" source="npm"/>
 <icon platform="android" src="icon/logo36.png" density="ldpi" width="36" height="36"/>
 <icon platform="android" src="icon/logo48.png" density="mdpi" width="48" height="48"/>
-<icon platform="android" src="icon/logo72.png" density="hdpi" width="72" height="72"/>
 <icon platform="android" src="icon/logo96.png" density="xhdpi" width="96" height="96"/>
 </widget>
