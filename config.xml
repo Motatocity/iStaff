@@ -11,8 +11,8 @@
 </platform>
 <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="xwalkMultipleApk" value="false" />
-<plugin name="cordova-plugin-device" spec="1.1.2"/>
-<plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1"/>
+<plugin name="cordova-plugin-device" spec="2.0.2"/>
+<plugin name="cordova-plugin-legacy-whitelist" spec="1.1.2"/>
 <gap:plugin name="phonegap-admob" source="npm"/>
 <icon platform="android" src="www/icon/logo36.png" density="ldpi" width="36" height="36"/>
 <icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
