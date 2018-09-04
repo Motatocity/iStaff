@@ -14,6 +14,5 @@
 <plugin name="cordova-plugin-device" spec="1.1.2"/>
 <plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1"/>
 <gap:plugin name="phonegap-admob" source="npm"/>
-<icon platform="android" src="icon/logo72.png" density="hdpi" width="72" height="72"/>
-<icon platform="android" src="icon/logo96.png" density="xhdpi" width="96" height="96"/>
+<icon platform="android" src="icon/logo96.png"/>
 </widget>
