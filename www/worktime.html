@@ -214,7 +214,7 @@ $.ajax({
 	<script type="text/javascript" charset="UTF-8">
 		function gotoclick() {
 			var date = new Date($("#calendar").fullCalendar('getDate'));
-			var month_int = date.getMonth();
+			var month_int = date.getMonth() + 1;
 			document.location.href = "worktime_detail.html?selmon="+month_int;
 		}
 	</script>
