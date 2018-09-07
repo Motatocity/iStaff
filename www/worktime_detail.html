@@ -34,8 +34,26 @@
 </div>
 
 <script type="text/javascript" charset="UTF-8">
+
+var locate = window.location;
+document.joe.burns.value = locate;
+var selectmonth = document.joe.burns.value;
+
+function delineate2(str)
+{
+	point = str.lastIndexOf("=");
+	return(str.substring(point+1,str.length));
+}
+
 var d = new Date();
 var msel = d.getMonth()+1;
+
+if(selectmonth == ""){
+	msel = d.getMonth()+1;
+} else {
+	msel = delineate2(selectmonth)+1;
+}
+
 $.ajax({
   type: 'GET',
   url: 'http://49.231.150.237/hr/worktime_detail.php?id='+cookeieuser+'&pname='+cookeiepname+'&monthsel='+('0' + msel).slice(-2),
