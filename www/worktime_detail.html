@@ -47,11 +47,12 @@ function delineate2(str)
 
 var d = new Date();
 var msel = d.getMonth()+1;
+var selectmonth = delineate2(selectmonth);
 
 if(selectmonth == ""){
 	msel = d.getMonth()+1;
 } else {
-	msel = delineate2(selectmonth)+1;
+	msel = selectmonth+1;
 }
 
 $.ajax({
