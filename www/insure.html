@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="loading.css" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.min.js" charset="utf-8"></script>
+<script src="bootstrap.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+<script>
+    var cookeieuser = window.localStorage.getItem("empid");
+	var cookeiepname = window.localStorage.getItem("display");
+    if(cookeieuser === null || cookeieuser.length === 0)
+    {
+        window.location.href = "login.html";
+    }
+</script> 
+    
+</head>
+<body style="background:#F2F2F2">
+<div class="col-md-12">
+<div id="ddItems">
+	<div class="spinner">
+		<div class="rect1"></div>
+		<div class="rect2"></div>
+		<div class="rect3"></div>
+		<div class="rect4"></div>
+		<div class="rect5"></div>
+	</div>
+	<h4><center>กรุณารอสักครู่</center></h4>
+</div>
+
+<script type="text/javascript" charset="UTF-8">
+$.ajax({
+  type: 'GET',
+  url: 'http://49.231.150.237/hr/insure.php?id='+cookeieuser+'&pname='+cookeiepname,
+  success: function (data) {
+     document.getElementById("ddItems").innerHTML = data; 
+  }
+});
+</script>
+
+</div>
+</body>
+</html>
