@@ -9,6 +9,10 @@
 <platform name="android">
     <access origin="*"/>
 </platform>
+<platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+</platform>
 <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="xwalkMultipleApk" value="false" />
 <plugin name="cordova-plugin-device" spec="2.0.2"/>
@@ -17,4 +21,8 @@
 <icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
 <icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
 <icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
+<icon src="res/icon/ios/icon-57.png" platform="ios" width="57" height="57" />
+<icon src="res/icon/ios/icon-72.png" platform="ios" width="72" height="72" />
+<icon src="res/icon/ios/icon-57-2x.png" platform="ios" width="114" height="114" />
+<icon src="res/icon/ios/icon-72-2x.png" platform="ios" width="144" height="144" />
 </widget>
