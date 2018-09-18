@@ -21,7 +21,6 @@
 <icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
 <icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
 <icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
-<<<<<<< HEAD
 <icon src="www/icon/ios/gray/20.png" platform="ios" width="20" height="20" />
 <icon src="www/icon/ios/gray/29.png" platform="ios" width="29" height="29" />
 <icon src="www/icon/ios/gray/40.png" platform="ios" width="40" height="40" />
@@ -43,21 +42,3 @@
 <icon src="www/icon/ios/gray/228.png" platform="ios" width="228" height="228" />
 <icon src="www/icon/ios/gray/1024.png" platform="ios" width="1024" height="1024" />
 </widget>
-=======
-<icon src="www/icon/ios/29x29.png" platform="ios" width="29" height="29" />
-<icon src="www/icon/ios/50x50.png" platform="ios" width="50" height="50" />
-<icon src="www/icon/ios/57x57.png" platform="ios" width="57" height="57" />
-<icon src="www/icon/ios/58x58.png" platform="ios" width="58" height="58" />
-<icon src="www/icon/ios/60x60.png" platform="ios" width="60" height="60" />
-<icon src="www/icon/ios/72x72.png" platform="ios" width="72" height="72" />
-<icon src="www/icon/ios/76x76.png" platform="ios" width="76" height="76" />
-<icon src="www/icon/ios/80x80.png" platform="ios" width="80" height="80" />
-<icon src="www/icon/ios/87x87.png" platform="ios" width="87" height="87" />
-<icon src="www/icon/ios/100x100.png" platform="ios" width="100" height="100" />
-<icon src="www/icon/ios/114x114.png" platform="ios" width="114" height="114" />
-<icon src="www/icon/ios/120x120.png" platform="ios" width="120" height="120" />
-<icon src="www/icon/ios/144x144.png" platform="ios" width="144" height="144" />
-<icon src="www/icon/ios/152x152.png" platform="ios" width="152" height="152" />
-<icon src="www/icon/ios/180x180.png" platform="ios" width="180" height="180" />
-</widget>
->>>>>>> origin/master
