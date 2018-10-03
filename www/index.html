@@ -73,19 +73,14 @@
     <!-- /.widget-user -->
 </div>
 
-<div class="col-md-12">
+<div id="notifmsg" class="col-md-12">
     <!-- Application buttons -->
-    <div class="box">
-      <div class="box-header">
-        <h3 class="box-title"><i class="fa fa-bullhorn"></i> แจ้งเตือน</h3>
-      </div>
 		<div class="callout callout-success">
-		<small>
-			ยินดีต้อนรับสู่ระบบ iStaff พัฒนาโดยหน่วย IT
-			<br>ตอนนี้ใช้งานได้เฉพาะ Android กำลังพัฒนาบน iOS เร็วๆ นี้
-		</small>
+			<small>
+				ยินดีต้อนรับสู่ระบบ iStaff พัฒนาโดยหน่วย IT
+				<br>ตอนนี้ใช้งานได้เฉพาะ Android กำลังพัฒนาบน iOS เร็วๆ นี้
+			</small>
 		</div>
-	</div>
 </div>
 
 <div class="col-md-12">
@@ -166,6 +161,15 @@
         
     });
 	
+	
+	$.ajax({
+		type: 'GET',
+		url: 'http://49.231.150.237/hr/notif.php?id='+cookeieuser,
+		success: function (data) {
+			document.getElementById("notifmsg").innerHTML = data; 
+		}
+	});
+
 
 	function onDeviceReady() {
 		document.removeEventListener('deviceready', onDeviceReady, false);
