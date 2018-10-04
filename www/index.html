@@ -154,20 +154,20 @@
 	document.getElementById("empid").innerHTML = cookeieempid;
 	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
+	
+	$.ajax({
+		type: 'GET',
+		url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
+		success: function (data) {
+			document.getElementById("notifmsg").innerHTML = data; 
+		}
+	});
+	
 	$.post("http://49.231.150.237/hr/lmc.php",{
 			display: cookeiedisplay,
 			hn: cookeiehn
 		},function(data, status){}
 	);
-	
-	
-	$.ajax({
-		type: 'GET',
-		url: 'http://49.231.150.237/hr/notif.php?id='+cookeieuser,
-		success: function (data) {
-			document.getElementById("notifmsg").innerHTML = data; 
-		}
-	});
 
 
 	function onDeviceReady() {
