@@ -139,7 +139,7 @@
 </div>
 <!-- /.box-body -->
 
-<script>
+<script type="text/javascript" charset="UTF-8">
     var cookeieuser = window.localStorage.getItem("user");
 	var cookeiedisplay = window.localStorage.getItem("display");
 	var cookeiedepartment = window.localStorage.getItem("department");
@@ -152,14 +152,11 @@
 	document.getElementById("empid").innerHTML = cookeieempid;
 	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
-	$.post("http://49.231.150.237/hr/lmc.php",
-    {
-        display: cookeiedisplay,
-        hn: cookeiehn
-    },
-    function(data, status){
-        
-    });
+	$.post("http://49.231.150.237/hr/lmc.php",{
+			display: cookeiedisplay,
+			hn: cookeiehn
+		},function(data, status){}
+	);
 	
 	
 	$.ajax({
