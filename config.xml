@@ -21,7 +21,7 @@
 <icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
 <icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
 <icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
-<icon src="www/icon/ios/gray/20.png" platform="ios" width="20" height="20" />
+<!--icon src="www/icon/ios/gray/20.png" platform="ios" width="20" height="20" />
 <icon src="www/icon/ios/gray/29.png" platform="ios" width="29" height="29" />
 <icon src="www/icon/ios/gray/40.png" platform="ios" width="40" height="40" />
 <icon src="www/icon/ios/gray/50.png" platform="ios" width="50" height="50" />
@@ -40,5 +40,5 @@
 <icon src="www/icon/ios/gray/167.png" platform="ios" width="167" height="167" />
 <icon src="www/icon/ios/gray/180.png" platform="ios" width="180" height="180" />
 <icon src="www/icon/ios/gray/228.png" platform="ios" width="228" height="228" />
-<icon src="www/icon/ios/gray/1024.png" platform="ios" width="1024" height="1024" />
+<icon src="www/icon/ios/gray/1024.png" platform="ios" width="1024" height="1024" /-->
 </widget>
