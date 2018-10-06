@@ -19,16 +19,11 @@
         window.location.href = "login.html";
     }
 	
-		cordova.plugins.notification.local.schedule({
-			title: 'My Motatocity notification',
-			text: 'Thats Motatocity easy...',
-			foreground: true
-		});
-	
 	function pushnotif() {
 		cordova.plugins.notification.local.schedule({
 			title: 'My Motatocity notification',
 			text: 'Thats Motatocity easy...',
+			trigger: { in: 20, unit: 'second' },
 			foreground: true
 		});
 	}
