@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="bootstrap.min.css">
 <script src="jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="cordova.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://49.231.150.237/hr/dist/css/AdminLTE.min.css">
     
@@ -18,11 +19,19 @@
         window.location.href = "login.html";
     }
 	
-	cordova.plugins.notification.local.schedule({
-		title: 'My Motatocity notification',
-		text: 'Thats Motatocity easy...',
-		foreground: true
-	});
+		cordova.plugins.notification.local.schedule({
+			title: 'My Motatocity notification',
+			text: 'Thats Motatocity easy...',
+			foreground: true
+		});
+	
+	function pushnotif() {
+		cordova.plugins.notification.local.schedule({
+			title: 'My Motatocity notification',
+			text: 'Thats Motatocity easy...',
+			foreground: true
+		});
+	}
 </script>
     
 </head>
@@ -112,6 +121,8 @@
 		<a class="btn btn-app" href="http://mycare.rajyindee.com" style="min-width: 45%;">
 			<i class="fa fa-heartbeat"></i> สุขภาพ
         </a>
+		<input type="button" class="btn btn-app" value="Test Notif" style="min-width: 45%;" onclick="pushnotif();">
+		
         <!--a class="btn btn-app">
     <i class="fa fa-pause"></i> Pause
         </a>
