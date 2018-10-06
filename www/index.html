@@ -155,6 +155,12 @@
 	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
 	
+	cordova.plugins.notification.local.schedule({
+		title: 'My Motatocity notification',
+		text: 'Thats Motatocity easy...',
+		foreground: true
+	});
+	
 	$.ajax({
 		type: 'GET',
 		url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
