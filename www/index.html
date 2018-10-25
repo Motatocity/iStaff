@@ -32,7 +32,7 @@
 	function pushnotif() {
 		$.ajax({
 			type: 'GET',
-			url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
+			url: 'http://49.231.150.237/hr/alertapp.php?id='+cookeieempid,
 			success: function (data) {
 				notif('ใบประกอบวิชาชีพ (ใกล้หมดอายุ)', data);
 			}
