@@ -8,7 +8,7 @@
 <preference name="android-build-tool" value="gradle" />
 <platform name="android">
     <access origin="*"/>
-	<resource-file src="ic_stat_onesignal_default.png" target="res/drawable-mdpi/ic_stat_onesignal_default.png" />
+	<resource-file src="res/drawable-mdpi/ic_stat_onesignal_default.png" target="res/drawable-mdpi/ic_stat_onesignal_default.png" />
 </platform>
 <platform name="ios">
     <allow-intent href="itms:*" />
