@@ -20,7 +20,7 @@
         window.location.href = "login.html";
     }
 	
-	function pushnotif(strtitle, strtext) {
+	function notif(strtitle, strtext) {
 		cordova.plugins.notification.local.schedule({
 			title: strtitle,
 			text: strtext,
@@ -29,13 +29,15 @@
 		});
 	}
 	
-	$.ajax({
-		type: 'GET',
-		url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
-		success: function (data) {
-			pushnotif('iStaff Notification', 'ทดสอบการแจ้งเตือนด้วย iStaff...');
-		}
-	}); 
+	function pushnotif() {
+		$.ajax({
+			type: 'GET',
+			url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
+			success: function (data) {
+				notif('iStaff Notification', 'ทดสอบการแจ้งเตือนด้วย iStaff...');
+			}
+		});
+	}
 	
 </script>
     
@@ -184,6 +186,7 @@
 				url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
 				success: function (data) {
 					document.getElementById("notifmsg").innerHTML = data; 
+					pushnotif();
 				}
 			}); 
 		},1000); 
