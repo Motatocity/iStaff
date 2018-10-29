@@ -20,7 +20,7 @@
 </platform>
 <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="xwalkMultipleApk" value="false" />
-<plugin name="cordova-plugin-device" spec="2.0.2"/>
+<plugin name="cordova-plugin-device"/>
 <plugin name="cordova-plugin-legacy-whitelist" spec="1.1.2"/>
 <plugin name="cordova-plugin-local-notification"/>
 <plugin name="onesignal-cordova-plugin"/>
