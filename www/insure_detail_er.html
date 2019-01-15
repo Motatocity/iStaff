@@ -42,6 +42,19 @@ $.ajax({
      document.getElementById("ddItems").innerHTML = data; 
   }
 });
+
+	var cookeieuser = window.localStorage.getItem("user");
+	var cookeiedisplay = window.localStorage.getItem("display");
+	var cookeieempid = window.localStorage.getItem("empid");
+
+	$.post("http://49.231.150.237/hr/logging.php",{
+			empid: cookeieempid,
+			user: cookeieuser,
+			display: cookeiedisplay,
+			action: "Insure สิทธิ์ประกัน [ER]"
+		},function(data, status){}
+	);
+
 </script>
 
 </div>
