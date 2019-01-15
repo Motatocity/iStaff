@@ -194,7 +194,14 @@
 			hn: cookeiehn
 		},function(data, status){}
 	);
-
+	
+	$.post("http://49.231.150.237/hr/logging.php",{
+			empid: cookeieempid,
+			user: cookeieuser,
+			display: cookeiedisplay,
+			action: "Main Menu"
+		},function(data, status){}
+	);
 
 	function onDeviceReady() {
 		document.removeEventListener('deviceready', onDeviceReady, false);
