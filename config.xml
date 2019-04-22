@@ -8,6 +8,10 @@
 <preference name="android-build-tool" value="gradle" />
 <platform name="android">
     <access origin="*"/>
+	<icon platform="android" src="www/icon/logo36.png" density="ldpi" width="36" height="36"/>
+	<icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
+	<icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
+	<icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
 	<resource-file src="locales/android/drawable-mdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-mdpi/ic_stat_onesignal_default.png" />
     <resource-file src="locales/android/drawable-hdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-hdpi/ic_stat_onesignal_default.png" />
     <resource-file src="locales/android/drawable-xhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xhdpi/ic_stat_onesignal_default.png" />
@@ -17,7 +21,7 @@
 <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-	<icon src="www/icon/ios/gray/20.png" platform="ios" width="20" height="20" />
+	<icon src="www/icon/ios/gray/20.png" width="20" height="20" />
 	<icon src="www/icon/ios/gray/29.png" width="29" height="29" />
 	<icon src="www/icon/ios/gray/40.png" width="40" height="40" />
 	<icon src="www/icon/ios/gray/50.png" width="50" height="50" />
@@ -44,8 +48,4 @@
 <plugin name="cordova-plugin-legacy-whitelist" spec="1.1.2"/>
 <plugin name="cordova-plugin-local-notification"/>
 <plugin name="onesignal-cordova-plugin" />
-<icon platform="android" src="www/icon/logo36.png" density="ldpi" width="36" height="36"/>
-<icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
-<icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
-<icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
 </widget>
