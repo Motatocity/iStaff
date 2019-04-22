@@ -53,10 +53,10 @@
 	<icon src="res/ios/icon-50@2x.png" width="100" height="100" />
 	<!-- iPad Pro -->
 	<icon src="res/ios/icon-83.5@2x.png" width="167" height="167" />
-	<splash platform="ios" src="icon/screen/iso/640x960.png" width="640" height="960" orientation="portrait"/>
-	<splash platform="ios" src="icon/screen/iso/640x1136.png" width="640" height="1136" orientation="portrait"/>
-	<splash platform="ios" src="icon/screen/iso/768x1024.png" width="768" height="1024" orientation="portrait"/>
-	<splash platform="ios" src="icon/screen/iso/1242x2208.png" width="1242" height="2208" orientation="portrait"/>
+	<splash platform="ios" src="icon/screen/ios/640x960.png" width="640" height="960" orientation="portrait"/>
+	<splash platform="ios" src="icon/screen/ios/640x1136.png" width="640" height="1136" orientation="portrait"/>
+	<splash platform="ios" src="icon/screen/ios/768x1024.png" width="768" height="1024" orientation="portrait"/>
+	<splash platform="ios" src="icon/screen/ios/1242x2208.png" width="1242" height="2208" orientation="portrait"/>
 </platform>
 <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="xwalkMultipleApk" value="false" />
