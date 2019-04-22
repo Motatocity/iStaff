@@ -21,7 +21,7 @@
 <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-	<preference name="prerendered-icon" value="true" />
+	<preference name="prerendered-icon" value="false" />
 	<icon platform="ios" src="icon/ios/29x29.png" width="29" height="29"/>
 	<icon platform="ios" src="icon/ios/58x58.png" width="58" height="58"/>
 	<icon platform="ios" src="icon/ios/87x87.png" width="87" height="87"/>
