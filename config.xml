@@ -6,8 +6,8 @@
 <author>Motatocity</author>
 <content src="index.html"/>
 <preference name="android-build-tool" value="gradle" />
+<access origin="*"/>
 <platform name="android">
-    <access origin="*"/>
 	<icon platform="android" src="www/icon/logo36.png" density="ldpi" width="36" height="36"/>
 	<icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
 	<icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
