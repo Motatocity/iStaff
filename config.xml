@@ -13,11 +13,34 @@
     <resource-file src="locales/android/drawable-xhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xhdpi/ic_stat_onesignal_default.png" />
     <resource-file src="locales/android/drawable-xxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxhdpi/ic_stat_onesignal_default.png" />
     <resource-file src="locales/android/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxxhdpi/ic_stat_onesignal_default.png" />
+	<icon platform="android" src="www/icon/logo36.png" density="ldpi" width="36" height="36"/>
+	<icon platform="android" src="www/icon/logo48.png" density="mdpi" width="48" height="48"/>
+	<icon platform="android" src="www/icon/logo72.png" density="hdpi" width="72" height="72"/>
+	<icon platform="android" src="www/icon/logo96.png" density="xhdpi" width="96" height="96"/>
 </platform>
 <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-	<icon src="icon.png" platform="ios" />
+	<icon src="www/icon/20.png" platform="ios" width="20" height="20" />
+	<icon src="www/icon/29.png" platform="ios" width="29" height="29" />
+	<icon src="www/icon/40.png" platform="ios" width="40" height="40" />
+	<icon src="www/icon/50.png" platform="ios" width="50" height="50" />
+	<icon src="www/icon/57.png" platform="ios" width="57" height="57" />
+	<icon src="www/icon/58.png" platform="ios" width="58" height="58" />
+	<icon src="www/icon/60.png" platform="ios" width="60" height="60" />
+	<icon src="www/icon/72.png" platform="ios" width="72" height="72" />
+	<icon src="www/icon/76.png" platform="ios" width="76" height="76" />
+	<icon src="www/icon/80.png" platform="ios" width="80" height="80" />
+	<icon src="www/icon/87.png" platform="ios" width="87" height="87" />
+	<icon src="www/icon/100.png" platform="ios" width="100" height="100" />
+	<icon src="www/icon/114.png" platform="ios" width="114" height="114" />
+	<icon src="www/icon/120.png" platform="ios" width="120" height="120" />
+	<icon src="www/icon/144.png" platform="ios" width="144" height="144" />
+	<icon src="www/icon/152.png" platform="ios" width="152" height="152" />
+	<icon src="www/icon/167.png" platform="ios" width="167" height="167" />
+	<icon src="www/icon/180.png" platform="ios" width="180" height="180" />
+	<icon src="www/icon/228.png" platform="ios" width="228" height="228" />
+	<icon src="www/icon/1024.png" platform="ios" width="1024" height="1024" />
 </platform>
 <preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="xwalkMultipleApk" value="false" />
