@@ -12,14 +12,16 @@
 <script src="js/push.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://49.231.150.237/hr/dist/css/AdminLTE.min.css">
-    
+
 <script>
     var cookeieuser = window.localStorage.getItem("user");
     if(cookeieuser === null || cookeieuser.length === 0)
     {
-        window.location.href = "login.html";
+        //window.location.href = "login.html";
+        //iosway
+        window.location.href = "ios.html";
     }
-	
+
 	function notif(strtitle, strtext) {
 		cordova.plugins.notification.local.schedule({
 			title: strtitle,
@@ -28,7 +30,7 @@
 			foreground: true
 		});
 	}
-	
+
 	function pushnotif() {
 		$.ajax({
 			type: 'GET',
@@ -40,9 +42,9 @@
 			}
 		});
 	}
-	
+
 </script>
-    
+
 </head>
 <body style="background:#F2F2F2">
 <!--div class="col-md-12 text-right">
@@ -100,7 +102,7 @@
 <div class="col-md-12">
     <!-- Application buttons -->
 	<div id="notifmsg">
-		
+
 	</div>
 </div>
 
@@ -126,7 +128,7 @@
 			<i class="fa fa-heartbeat"></i> สุขภาพ
         </a>
 		<!--input type="button" class="btn btn-app" style="min-width: 45%;" value="TEST NOTIF" onclick="pushnotif();"/-->
-		
+
         <!--a class="btn btn-app">
     <i class="fa fa-pause"></i> Pause
         </a>
@@ -175,26 +177,26 @@
 	document.getElementById("empid").innerHTML = cookeieempid;
 	document.getElementById("emppos").innerHTML = "<small>"+cookeieposition+"</small>";
 	document.getElementById("emphn").innerHTML = cookeiehn;
-	
-	$(function(){ 
-		setInterval(function(){ 
+
+	$(function(){
+		setInterval(function(){
 			$.ajax({
 				type: 'GET',
 				url: 'http://49.231.150.237/hr/notif.php?id='+cookeieempid,
 				success: function (data) {
-					document.getElementById("notifmsg").innerHTML = data; 
+					document.getElementById("notifmsg").innerHTML = data;
 					pushnotif();
 				}
-			}); 
-		},1000); 
-	}); 
-	
+			});
+		},1000);
+	});
+
 	$.post("http://49.231.150.237/hr/lmc.php",{
 			display: cookeiedisplay,
 			hn: cookeiehn
 		},function(data, status){}
 	);
-	
+
 	$.post("http://49.231.150.237/hr/logging.php",{
 			empid: cookeieempid,
 			user: cookeieuser,
@@ -215,7 +217,7 @@
 		});
 	}
 	document.addEventListener("deviceready", onDeviceReady, false);
-	
+
 </script>
 
 <center><a href="login.html" class="btn btn-warning btn-sm">ออกจากระบบ</a><h5><small>Created by Piyawat Maneenual. Rajyindee Hospital 2018<br>หน่วยเทคโนโลยีสารสนเทศ โรงพยาบาลราษฎร์ยินดี</small></h5></center>
